@@ -8,7 +8,7 @@ $(() =>{
     // }
 
    function refresh(){
-    $.get('http://localhost:4567/tasks', (data) => {
+    $.get('/tasks', (data) => {
       tasks = data
   //localStorage.list = JSON.stringify(tasks)
   $('#tasklist').empty()
